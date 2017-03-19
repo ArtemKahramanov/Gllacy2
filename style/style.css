@@ -788,32 +788,25 @@ a:hover{
     border-radius: 30px;
     cursor: pointer;
     color: white;
+    position: relative;
+}
+.bott_icon{
+    position: absolute;
+    color: white;
+    top: 7px;
+    right: 14px;
+    font-size: 18px;
+    width: 11px;
+    height: 20px;
+    background: #9DB1A6;
+}
+.list_sort:hover .bott_icon{
+	background: white;
+	color: #333;
 }
 .list_sort:hover,.select:hover{
 	background: white;
 	color: #333;
-}
-option{
-	font-weight: normal;
-    display: block;
-    white-space: pre;
-    min-height: 1.2em;
-    padding: 0px 2px 1px;
-}
-.sortlist ul li{
-	padding: 5px 15px;
-}
-.sortlist ul li:hover{
-	background: #1e90ff;
-	color: white;
-	cursor: pointer;
-}
-.sortlist ul li:first-child{
-	background: #1e90ff;
-	color: white;
-}
-.sortlist ul{
-	list-style-type: none;
 }
 .polos{
     position: relative;
@@ -1204,7 +1197,6 @@ td{
 	height: 30px;
 	cursor: pointer;
     background: url(../img/sprite.png);
-
 }
 .input-check {
   position: relative;
@@ -1224,7 +1216,7 @@ td{
   display: block;
   position: absolute;
   left: 0;
-  top: 0%;
+  top: -15%;
   width: 20px;
   height: 20px;
   background: rgba(0, 0, 0, 0) url(../img/no_checed.png) no-repeat;

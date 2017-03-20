@@ -142,14 +142,17 @@ button{
 }
 .enter:hover .ent{
     display: block;
+    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 .search:hover .sear{
     display: block;
+    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 .basket:hover .bask{
     display: block;
+    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 .row{
@@ -520,9 +523,13 @@ div.right_head{
     margin-left: 12px;
 }
 .hits{
-    margin: 15px 0;
+    margin: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .hit{
     margin: 0 10px;
@@ -625,7 +632,7 @@ div.mail{
 .mail_block > p{
     margin-bottom: 18px;
 }
-.form{
+.butt_form{
     background: -webkit-linear-gradient(#f06643,#cb3926);
     background: linear-gradient(#f06643,#cb3926);
     border: none;
@@ -636,10 +643,10 @@ div.mail{
     display: inline-block;
     margin-bottom: 20px;
 }
-.form:hover{
+.butt_form:hover{
     background: #e76c3a;
 }
-.form:active{
+.butt_form:active{
     background: -webkit-linear-gradient(#cb3926,#f06643);
     background: linear-gradient(#cb3926,#f06643);
 }
@@ -657,7 +664,7 @@ input.mail{
     margin-top: 15px;
     min-height: 427px;
     position: relative;
-    background: url(../img/map.png);
+    background: url(../img/map.jpg);
     background-size: cover;
 }
 .mbloc{
@@ -779,6 +786,7 @@ a:hover{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 85px;
 }
 .sorting,.price_toggle,.fat{
     display: inline-block;
@@ -786,26 +794,31 @@ a:hover{
     margin-right: 15px;
     position: relative;
 }
-.list_sort{   
+.list_sort{
     position: relative;
-    background: white;
-    border-radius: 25px;
-    color: #333;
     width: 100%;
-    padding: 0px 12px;
-    background: #9DB1A6;
+    height: 36px;
+    font-weight: 500;
+    background-color: #9DB1A6;
+    border-radius: 30px;
+    cursor: pointer;  
 }
 .select{
-    font: 15px 'Roboto-bold', "PT sans", Georgia;
     width: 100%;
-    height: 34px;
+    height: 36px;
     margin: 0;
+    padding: 0 45px 0 10px;
     background-color: transparent;
+    color: white;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
-    color: white;
-    position: relative;
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font: 15px 'Roboto-bold', "PT sans", Georgia;
+    width: 100%;
 }
 .bott_icon{
     position: absolute;
@@ -1111,8 +1124,6 @@ td{
 .hit img{
     position: relative;
     border-radius: 50%; 
-    width: 100%;
-    height: 100%;
 }
 .price{
     text-shadow: 0 1px 3px rgba(0,0,0,.5);
@@ -1234,7 +1245,7 @@ td{
   opacity: 0;
 }
 .input-check label {
-  padding:0 30px 0 30px;
+  padding:0 25px 0 25px;
   font-family: 'Roboto-bold', 'PT sans', Georgia;
   position: relative;
   cursor: pointer;

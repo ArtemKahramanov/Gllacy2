@@ -514,6 +514,7 @@ div.right_head{
     font-size: 18px;
     padding: 12px 20px 80px;
     margin-right: 12px;
+    max-width: 50%;
 }
 .chocolate{
     background: url(../img/f2.jpg);
@@ -521,6 +522,7 @@ div.right_head{
     font-size: 18px;
     padding: 15px 20px 80px;
     margin-left: 12px;
+    max-width: 50%;
 }
 .hits{
     margin: 10px 0;
@@ -571,9 +573,10 @@ div.cont{
 .metod_10:hover{
     border-bottom: 2px solid #D07058;
 }
+.blog{
+    padding: 12px 2.2% 24px 2.2%;
+}
 .new_block{
-    margin:2.2%;
-    margin-top: 10px;
     background: url(../img/rasp.png);
     background-size: cover;
     padding: 2.3%;
@@ -582,6 +585,7 @@ div.cont{
     color: #333;
     height: 218px;
     font-family: 'Roboto-Regular', "PT sans", Georgia;
+    max-width: 49%;
 }
 .new_block p{
     font-size: 16px;
@@ -591,8 +595,6 @@ div.cont{
     line-height: 1.544;
 }
 .mail_block{
-    margin-right: 2.2%;
-    margin-top: 10px;
     background: url(../img/mail.png);
     background-size: cover;
     padding: 2.3%;
@@ -604,6 +606,7 @@ div.cont{
     position: relative;
     font-family: 'Roboto-Regular', "PT sans", Georgia;
     background-position: 50% 50%;
+    max-width: 49%;
 }
 div.mail{
     position: absolute;
@@ -796,15 +799,16 @@ a:hover{
 }
 .list_sort{
     position: relative;
-    width: 100%;
+    width: 190px;
     height: 36px;
     font-weight: 500;
     background-color: #9DB1A6;
     border-radius: 30px;
-    cursor: pointer;  
+    cursor: pointer; 
+    overflow: hidden; 
 }
 .select{
-    width: 100%;
+    width: 240px;
     height: 36px;
     margin: 0;
     padding: 0 45px 0 10px;
@@ -818,7 +822,6 @@ a:hover{
     -moz-appearance: none;
     appearance: none;
     font: 15px 'Roboto-bold', "PT sans", Georgia;
-    width: 100%;
 }
 .bott_icon{
     position: absolute;
@@ -884,7 +887,7 @@ input:hover{
 }
 .jir{
     background: #9DB1A6;
-    padding: 9px 15px 9px 15px;
+    padding: 9px 10px 9px 15px;
     border-radius: 25px;
 }
 .rad input,.nap input{
@@ -1071,7 +1074,7 @@ td{
 }
 .radio:not(checked) + label {
   position: relative;
-  padding: 0 25px 0 25px;
+  padding: 0 8px 0 30px;
 }
 .radio:not(checked) + label:before {
   content: '';

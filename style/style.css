@@ -214,6 +214,7 @@ li.tog:after, li.tog1:after {
   position: absolute;
   left: 0;
   right: 0;
+  bottom: -5px;
   height: 15px;
 }
 li.tog1{
@@ -1165,6 +1166,7 @@ td{
 .desk_l div,.desk_r div{
     padding: 14px 0 10px 0px;
     display: inline-block;
+    max-width: 480px;
 }
 .ruble{
     font-family: 'PT Sans', serif;

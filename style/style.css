@@ -44,6 +44,11 @@ body{
     background-repeat: no-repeat;
     background-position: 50% 0px;
 }
+.bodybg4{
+    background-image: url(../img/svet.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+}
 a{
     text-decoration: none;
     color: white;
@@ -85,11 +90,10 @@ button{
     color: #333;
     padding: 15px;
     height: 450px;
-    position: absolute;
+    position: fixed;
     z-index: 11111;
-    top: 50%;
-    left: 30%;
-    right: 30%;
+    top: 25%;
+    left: 40%;
     display: none;
 }
 .close{
@@ -166,7 +170,7 @@ button{
     position: relative;
 }
 div.left_head{
-    margin: 5px 2.2%;
+    margin: 5px 2.2% 15px 2.2%;
     max-width: 70%;
 }
 div.left_head > img{
@@ -282,6 +286,8 @@ li.tog1 > a{
 }
 div.right_head{
     text-align: right;
+    margin: -8px 0;
+    padding: 0 10px;
 }
 .icon{
     display: inline-block;
@@ -289,7 +295,7 @@ div.right_head{
     font-size: 15px;
     margin: 16px 4px;
     border: none;
-    background: #9DB1A6;
+    background: #aabbb1;
     padding: 7px 19px;
     border-radius: 25px;
 }
@@ -317,7 +323,7 @@ div.right_head{
 }
 .licon2{
     padding-left: 40px;
-    padding-right: 20px;
+    padding-right: 15px;
     margin-right: 20px;
     position: relative;
 }
@@ -333,7 +339,7 @@ div.right_head{
     color: white;
     font-size: 12px;
     margin-right: 2.3%;
-    margin-top: -5px;
+    margin-top: -18px;
     float: right;
 }
 .enter{
@@ -414,11 +420,11 @@ div.right_head{
     width: 100%;
     background: rgba(255,255,255,0.4);
     z-index: 10000;
-    padding-bottom: 25px;
+    padding-bottom: 18px;
     border-radius: 0 0 5px 5px;
     display: none;
     left: 0;
-    bottom: -68px;
+    bottom: -61px;
 }
 .hit:hover .absol{
     display: block;
@@ -430,10 +436,10 @@ div.right_head{
     background: -webkit-linear-gradient(#f06643,#cb3926);
     background: linear-gradient(#f06643,#cb3926);
     border: none;
-    padding: 13px 18px;
-    border-radius: 25px;
+    padding: 12px 25px;
+    border-radius: 17px;
     color: #fff;
-    font-size: 15px;
+    font-size: 17px;
 }
 .enter_button{
     background: -webkit-linear-gradient(#f06643,#cb3926);
@@ -797,7 +803,7 @@ a:hover{
 }
 .sorting,.price_toggle,.fat{
     display: inline-block;
-    padding: 1.2% 0%;
+    padding: 1% 0%;
     margin-right: 15px;
     position: relative;
 }
@@ -806,7 +812,7 @@ a:hover{
     width: 190px;
     height: 36px;
     font-weight: 500;
-    background-color: #9DB1A6;
+    background-color: #aabbb1;
     border-radius: 30px;
     cursor: pointer; 
     overflow: hidden; 
@@ -840,7 +846,7 @@ a:hover{
     font-size: 18px;
     width: 11px;
     height: 20px;
-    background: #9DB1A6;
+    background: #aabbb1;
 }
 .list_sort:hover .bott_icon{
     background: white;
@@ -854,7 +860,7 @@ a:hover{
     position: relative;
     width: 220px;
     height: 34px;
-    background: #9DB1A6;
+    background: #aabbb1;
     padding-top: 11px;
     padding-right: 15px;
     padding-left: 15px;
@@ -895,27 +901,32 @@ input:hover{
     box-shadow: 0 0 0 2px #c7c6c5 inset;
 }
 .jir{
-    background: #9DB1A6;
+    background: #aabbb1;
     padding: 9px 10px 9px 15px;
     border-radius: 25px;
+    font-size: 16px;
+}
+.first_label{
+    padding: 0 17px 0 30px;
 }
 .rad input,.nap input{
     margin:0 8px;
 }
 .nap{
-    background: #9DB1A6;
-    width: 705px;
-    padding:12px 17px;
+    background: #aabbb1;
+    padding: 10px 5px 10px 12px;
     border-radius: 25px;
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 10px;
+    font-size: 16px;
 }
 .prim{
     border: 2px solid white;
-    background: #9DB1A6;
-    padding: 8px 30px;
+    background: #aabbb1;
+    padding: 7px 27px;
     color: white;
     border-radius: 25px;
+    font-size: 16px;
 }
 .prim:hover{
     background: white;
@@ -929,12 +940,16 @@ input:hover{
     border-radius: 25px;
     box-shadow: inset 0px 2px 2px #4B4B4B;
 }
-.crown{
+.breadcrump{
     position: absolute;
     bottom: -25px;
     font-size: 15px;
 }
-.crown a{
+.breadcrump ul li{
+        display: inline-block;
+        list-style-type: none;
+}
+.breadcrump a{
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .right_foot p{
@@ -974,9 +989,10 @@ input:hover{
 }
 .pages{
     text-align: right;
-    margin-top: 53px;
+    margin-top: 62px;
     margin-bottom: 30px;
     font-size: 18px;
+    margin-right: 30px;
 }
 .page i{
     padding: 1px;
@@ -1083,7 +1099,7 @@ td{
 }
 .radio:not(checked) + label {
   position: relative;
-  padding: 0 8px 0 30px;
+  padding: 0 15px 0 30px;
 }
 .radio:not(checked) + label:before {
   content: '';
@@ -1259,7 +1275,7 @@ td{
   opacity: 0;
 }
 .input-check label {
-  padding:0 25px 0 25px;
+  padding: 0 20px 0 26px;
   font-family: 'Roboto-bold', 'PT sans', Georgia;
   position: relative;
   cursor: pointer;
@@ -1268,7 +1284,7 @@ td{
   display: block;
   position: absolute;
   left: 0;
-  top: -15%;
+  top: 0;
   width: 20px;
   height: 20px;
   background: rgba(0, 0, 0, 0) url(../img/no_checed.png) no-repeat;
@@ -1277,3 +1293,4 @@ td{
 .input-check input:checked + label:before {
   background: rgba(0, 0, 0, 0) url(../img/checed.png) no-repeat;
 }
+/*breadcrump*/

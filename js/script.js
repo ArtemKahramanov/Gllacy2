@@ -6,7 +6,7 @@ $(document).ready(function(){
 		$('.bask').hide();
 		$('.iconer').removeClass('actser');
 	});
-	$('.go').on('click', function(){
+	$('.butt_form').on('click', function(){
 		$('.alert').show();
 	});
 	$('.close').on('click', function(){

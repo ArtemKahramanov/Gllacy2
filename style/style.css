@@ -47,6 +47,7 @@ body{
 .bodybg4{
     background-image: url(../img/svet.png);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: 50% 0px;
 }
 a{
@@ -121,7 +122,7 @@ button{
     width: 300px;
     color: #a9a9a9;
     height: 40px;
-    padding-left: 5px;
+    padding-left: 10px;
     font-size: 14px;
 }
 .textarea{
@@ -139,7 +140,7 @@ button{
     position: absolute;
     background: white;
     right: 10%;
-    top: 85%;
+    top: 75%;
     padding: 15px;
     padding: 15px;
     border-radius: 5px;
@@ -225,7 +226,7 @@ li.tog1{
     position: relative;
     padding: 8px 15px;
     border: none;
-    background: #d07058;
+    background: #e84d37;
     border-radius: 25px;
 }
 li.tog1 > a{
@@ -293,10 +294,10 @@ div.right_head{
     display: inline-block;
     color: white;
     font-size: 15px;
-    margin: 16px 4px;
+    margin: 27px 5px;
     border: none;
     background: #aabbb1;
-    padding: 7px 19px;
+    padding: 8px 19px;
     border-radius: 25px;
 }
 .is{
@@ -307,9 +308,9 @@ div.right_head{
     background: white;
     color: #333;
     font-size: 15px;
-    margin: 27px 8px;
+    margin: 27px 5px;
     border: none;
-    padding: 7px 19px;
+    padding: 8px 19px;
     border-radius: 25px;
 }
 .icon:hover{
@@ -318,7 +319,7 @@ div.right_head{
 }
 .licon{
     padding: 8px 27px;
-    margin-right: 24px;
+    margin-right: 15px;
     position: relative;
 }
 .licon2{
@@ -332,7 +333,7 @@ div.right_head{
     color: white;
     font-size: 12px;
     margin-right: 2.3%;
-    margin-top: -5px;
+    margin-top: -15px;
 }
 .number2{
     text-align: right;
@@ -353,7 +354,7 @@ div.right_head{
     right: 5%;
     padding: 15px;
     border-radius: 8px;
-    top: 83%;
+    top: 75%;
     color: #333;
     display: none;
     box-shadow: 5px 14px 26px rgba(0,0,0, 0.5);
@@ -467,6 +468,9 @@ div.right_head{
 }
 .regist a{
     color: #333;
+    border-bottom: 1px solid #333;
+    padding: 3px 0px;
+    display: inline-block;
 }
 .regist{
     margin-top: 15px;
@@ -562,9 +566,12 @@ div.right_head{
 div.cont{
     background: url(../img/bg.jpg);
     border-radius: 15px;
-    margin: 12px 2.2% 24px 2.2%;
-    padding: 2.3%;
+    margin: 12px 2.2% 28px 2.2%;
+    padding: 2% 2.3%;
     color: #333;
+}
+.cont p{
+    line-height: 1.55;
 }
 .ic{
     float: left;
@@ -581,7 +588,7 @@ div.cont{
     color: #333;
 }
 .metod_10:hover{
-    border-bottom: 2px solid #D07058;
+    border-bottom: 2px solid #e84d37;
 }
 .blog{
     padding: 12px 2.2% 24px 2.2%;
@@ -607,7 +614,7 @@ div.cont{
 .mail_block{
     background: url(../img/mail.png);
     background-size: cover;
-    padding: 23px 2.3%;
+    padding: 32px 2.3%;
     width: 50%;
     border-radius: 15px;
     color: #333;
@@ -684,7 +691,7 @@ input.mail{
     position: absolute;
     background: white;
     border-radius: 15px;
-    padding: 30px 20px 20px 25px;
+    padding: 35px 0px 12px 25px;
     color: #333;
     font: 14px 'Roboto-Regular', "PT sans", Georgia;
     right: 2%;
@@ -717,7 +724,7 @@ input.mail{
 }
 .fl{
     display: inline-block;
-    margin-right: 15px;
+    margin: 0 20px 0 -30px;
 }
 .fr{
     display: inline-block;  
@@ -737,8 +744,8 @@ input.mail{
     right: 35px;
 }
 a:hover{
-    color: #d07058;
-    border-bottom: 1px solid #d07058;
+    color: #e84d37;
+    border-bottom: 1px solid #e84d37;
 }
 .dropdown a:hover{
     color: #333;
@@ -883,11 +890,11 @@ a.a1,a.a2{
 }
 .a1{
     top: 8px;
-    left: 40px;
+    left: 35px;
 }
 .a2{
     top: 8px;
-    left: 120px;
+    left: 135px;
 }
 .a1:hover,.a2:hover{
     -webkit-transform:scale(1.3);
@@ -951,6 +958,17 @@ input:hover{
 }
 .breadcrump a{
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    margin-right: 18px;
+}
+.breadcrump a:after{
+    content: "\00BB";
+    position: absolute;
+    right: -15px;
+    top: 1px;
+}
+.breadcrump a:hover{
+    border-bottom: 1px solid #e84d37;
 }
 .right_foot p{
     margin: 5px 0;
@@ -989,7 +1007,7 @@ input:hover{
 }
 .pages{
     text-align: right;
-    margin-top: 62px;
+    margin-top: 65px;
     margin-bottom: 30px;
     font-size: 18px;
     margin-right: 30px;
@@ -1176,11 +1194,9 @@ td{
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: 50%;
-    padding-left: 50px;
-    padding-right: 15px;
+    padding-left: 53px;
 }
 .desk_l div,.desk_r div{
-    padding: 14px 0 10px 0px;
     display: inline-block;
     max-width: 480px;
 }
@@ -1209,6 +1225,12 @@ td{
     display: inline-flex;
     list-style-type: none;
 }
+.icon_sprite1, .icon_sprite3{
+    padding: 4px 0 0px 0px;
+}
+.icon_sprite2, .icon_sprite4{
+    padding: 14px 0 0px 0px;
+}
 .icon_sprite1, .icon_sprite2, .icon_sprite3, .icon_sprite4{
     position: relative;
 }
@@ -1218,8 +1240,8 @@ td{
     width: 50px;
     height: 50px;
     background: url(../img/sprite.png);
-    left: -11%;
-    top: 10%;
+    left: -12%;
+    top: 0%;
     background-position: 145px -4px;
 }
 .icon_sprite2::before{
@@ -1228,8 +1250,8 @@ td{
     width: 50px;
     height: 50px;
     background: url(../img/sprite.png);
-    left: -11%;
-    top: 10%;
+    left: -12%;
+    top: 6%;
     background-position: -5px 54px;
 }
 .icon_sprite3::before{
@@ -1239,7 +1261,7 @@ td{
     height: 50px;
     background: url(../img/sprite.png);
     left: -11%;
-    top: 10%;
+    top: 0%;
     background-position: 112px 54px;
 }
 .icon_sprite4::before{
@@ -1293,4 +1315,3 @@ td{
 .input-check input:checked + label:before {
   background: rgba(0, 0, 0, 0) url(../img/checed.png) no-repeat;
 }
-/*breadcrump*/

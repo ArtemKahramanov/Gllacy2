@@ -425,7 +425,6 @@ div.right_head{
     border-radius: 0 0 5px 5px;
     display: none;
     left: 0;
-    bottom: -61px;
 }
 .hit:hover .absol{
     display: block;
@@ -942,9 +941,7 @@ input:hover{
 .prim:active{
     border: none;
     background: #FFFFFF;
-    padding: 10px 22px;
     color: black;
-    border-radius: 25px;
     box-shadow: inset 0px 2px 2px #4B4B4B;
 }
 .breadcrump{

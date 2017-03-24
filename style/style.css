@@ -847,18 +847,18 @@ a:hover{
 .bott_icon{
     position: absolute;
     color: white;
-    top: 7px;
+    top: 9px;
     right: 14px;
     font-size: 18px;
     width: 11px;
-    height: 20px;
+    height: 15px;
     background: #aabbb1;
 }
-.list_sort:hover .bott_icon{
+.list_sort:hover .bott_icon, .list_sort:hover .select{
     background: white;
     color: #333;
 }
-.list_sort:hover,.select:hover{
+.list_sort:hover{
     background: white;
     color: #333;
 }
